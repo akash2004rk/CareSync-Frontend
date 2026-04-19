@@ -219,7 +219,7 @@ function DoctorDashboard() {
                       </div>
                       <div style={{ marginTop: 8, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <span className="badge badge-info" style={{ fontSize: 10 }}>{r.recordType}</span>
-                        <a href={`http://localhost:5000/${r.fileUrl}`} target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-sm" style={{ height: 24, fontSize: 11 }}>View</a>
+                        <a href={`${import.meta.env.VITE_API_URL}/${r.fileUrl}`} target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-sm" style={{ height: 24, fontSize: 11 }}>View</a>
                       </div>
                     </div>
                   ))}

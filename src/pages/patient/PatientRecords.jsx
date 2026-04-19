@@ -75,7 +75,7 @@ function PatientRecords() {
 
               <div style={{ display:'flex', gap:8, marginTop:4 }}>
                 <a
-                  href={`http://localhost:5000/${r.fileUrl}`}
+                  href={`${import.meta.env.VITE_API_URL}/${r.fileUrl}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-ghost btn-sm"
